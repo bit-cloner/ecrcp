@@ -31,6 +31,7 @@ you need to
 2. Create a repository in AWS ECR
 3. Tag it apporpriately 
 4. Push it to target repository
+
 Using this tool you can do it from a single terminal all of the above steps or you can use it in a script to do the same. 
 
 ### What's next
