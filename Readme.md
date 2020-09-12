@@ -1,5 +1,5 @@
 Docker have recently made some changes to their policy regarding public docker images. Docker have removed the ability to freely pull images from docker hub
-unrestricted. This means anonymous users cannot pull images beyond a certain rate limit.Systems that were configured to pull public images from docker hub will 
+unrestricted. This means anonymous users cannot pull images beyond a certain rate limit. Systems that were configured to pull public images from docker hub will 
 stop working. The CLI tool I am going to talk about in this post will help to get around this limitation if you happen to have a private repository. In particular 
 I am going to focus on AWS's ECR in this post. Many AWS customers already have ECR as their private repository but might be pulling lot of public images from dockerhub
 as this is the defult for docker deamon. If you can proxy or cache these public images onto your private repository you can avoid hitting the rate limit that docker has set.
@@ -32,3 +32,7 @@ you need to
 3. Tag it apporpriately 
 4. Push it to target repository
 Using this tool you can do it from a single terminal all of the above steps or you can use it in a script to do the same. 
+
+### What's next
+1. I plan to build a similar tool for GCR and ACR
+2. Make these as linux packages so they can be installed using for ex: ```apt install ecrcp ``` 
