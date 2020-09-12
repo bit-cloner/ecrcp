@@ -13,7 +13,9 @@ ECR.
 2. AWS credentials that have permissions to create a repository and push to a repsotory in AWS ECR.
 
 ### How to get it
-``` wget https://github.com/bit-cloner/ecrcp/releases/download/0.9/ecrcp```
+``` 
+wget https://github.com/bit-cloner/ecrcp/releases/download/0.9/ecrcp
+```
 https://github.com/bit-cloner/ecrcp
 
 ### Usage
