@@ -25,6 +25,10 @@ ecrcp nginx:latest XXXXXXXXXXXX.dkr.ecr.eu-west-1.amazonaws.com/<REPO-NAME>/<IMA
 ```
 ### How is this useful 
 
-Imagine there are a number of public images that your container runtime/ orichestration systems rely on. Getting a copy of these images into a local container repository can be tedious and manual to
-do a docker pull , create a repository in AWS ECR, Tag it apporpriately and push it to target repository. Using this tool you can do it from a single terminal all of the above steps or you can
-use it in a script to do the same. 
+Imagine there are a number of public images that your container runtime/ orichestration systems rely on. Getting a copy of these images into a local container repository can be tedious and manual.
+you need to 
+1. Do a docker pull 
+2. Create a repository in AWS ECR
+3. Tag it apporpriately 
+4. Push it to target repository
+Using this tool you can do it from a single terminal all of the above steps or you can use it in a script to do the same. 
