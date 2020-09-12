@@ -32,7 +32,7 @@ you need to
 3. Tag it apporpriately 
 4. Push it to target repository
 
-Using this tool you can do it from a single terminal all of the above steps or you can use it in a script to do the same. 
+This tool you can do all of the above from a single terminal. Also you can use it in a script to do the same.
 
 ### What's next
 1. I plan to build a similar tool for GCR and ACR
