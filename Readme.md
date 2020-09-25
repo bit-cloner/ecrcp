@@ -1,12 +1,12 @@
+### What is ecrcp
+ecrcp aims to mimic cp command in Linux systems as closely as possible in its implementation. Consider ecrcp to be the cp equivalent to copy container images from docker hub to
+ECR. 
+
 Docker have recently made some changes to their policy regarding public docker images. Docker have removed the ability to freely pull images from docker hub
 unrestricted. This means anonymous users cannot pull images beyond a certain rate limit. Systems that were configured to pull public images from docker hub will 
 stop working. The CLI tool I am going to talk about in this post will help to get around this limitation if you happen to have a private repository. In particular 
 I am going to focus on AWS's ECR in this post. Many AWS customers already have ECR as their private repository but might be pulling lot of public images from dockerhub
 as this is the defult for docker deamon. If you can proxy or cache these public images onto your private repository you can avoid hitting the rate limit that docker has set.
-
-### What is ecrcp
-ecrcp aims to mimic cp command in Linux systems as closely as possible in its implementation. Consider ecrcp to be the cp equivalent to copy container images from docker hub to
-ECR. 
 
 ### Prerequisites
 1. ecrcp relies on docker client . It uses the same docker client to pull and push images to docker hub and AWS's ECR registry. 
