@@ -57,7 +57,7 @@ https://github.com/bit-cloner/ecrcp
 ### Usage
 ``` 
 chmod +x ./ecrcp
-ecrcp nginx:latest XXXXXXXXXXXX.dkr.ecr.eu-west-1.amazonaws.com/<REPO-NAME>/<IMAGE-NAME>:<TAG> 
+ecrcp nginx:latest XXXXXXXXXXXX.dkr.ecr.<REGION>.amazonaws.com/<REPO-NAME>/<IMAGE-NAME>:<TAG> 
 ```
 ### How is this useful 
 
