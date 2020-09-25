@@ -12,6 +12,42 @@ as this is the defult for docker deamon. If you can proxy or cache these public 
 1. ecrcp relies on docker client . It uses the same docker client to pull and push images to docker hub and AWS's ECR registry. 
 2. AWS credentials that have permissions to create a repository and push to a repsotory in AWS ECR.
 
+### Required AWS permissions
+
+```json
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Sid": "VisualEditor0",
+            "Effect": "Allow",
+            "Action": [
+                "ecr:PutLifecyclePolicy",
+                "ecr:PutImageTagMutability",
+                "ecr:DescribeImageScanFindings",
+                "ecr:StartImageScan",
+                "ecr:GetLifecyclePolicyPreview",
+                "ecr:CreateRepository",
+                "ecr:GetDownloadUrlForLayer",
+                "ecr:PutImageScanningConfiguration",
+                "ecr:GetAuthorizationToken",
+                "ecr:ListTagsForResource",
+                "ecr:UploadLayerPart",
+                "ecr:PutImage",
+                "ecr:BatchGetImage",
+                "ecr:CompleteLayerUpload",
+                "ecr:DescribeImages",
+                "ecr:TagResource",
+                "ecr:InitiateLayerUpload",
+                "ecr:BatchCheckLayerAvailability",
+                "ecr:GetLifecyclePolicy"
+            ],
+            "Resource": "*"
+        }
+    ]
+}
+```
+
 ### How to get it
 ``` 
 wget https://github.com/bit-cloner/ecrcp/releases/download/0.9/ecrcp
