@@ -61,14 +61,14 @@ ecrcp nginx:latest XXXXXXXXXXXX.dkr.ecr.<REGION>.amazonaws.com/<REPO-NAME>/<IMAG
 ```
 ### How is this useful 
 
-Imagine there are a number of public images that your container runtime/ orichestration systems rely on. Getting a copy of these images into a local container repository can be tedious and manual.
-you need to 
+When there are a number of public images that your container runtime/orchestration systems rely on. Getting a copy of these images into a local container repository can be tedious and manual.
+you would need to 
 1. Do a docker pull 
 2. Create a repository in AWS ECR
 3. Tag it apporpriately 
 4. Push it to target repository
 
-This tool you can do all of the above from a single terminal. Also you can use it in a script to do the same.
+This tool you can do all of the above from a single terminal. Also you can use it in a script/CI/CD to do the same.
 
 ### What's next
 1. I plan to build a similar tool for GCR and ACR
