@@ -73,3 +73,6 @@ This tool you can do all of the above from a single terminal. Also you can use i
 ### What's next
 1. I plan to build a similar tool for GCR and ACR
 2. Make these as linux packages so they can be installed using for ex: ```apt install ecrcp ``` 
+
+<h3 align="left">Support:</h3>
+<p><a href="https://www.buymeacoffee.com/welldone"> <img align="left" src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" height="50" width="210" alt="welldone" /></a></p><br><br>
